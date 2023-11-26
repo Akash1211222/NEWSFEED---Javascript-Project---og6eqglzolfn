@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6,26 +7,20 @@
     Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
+
 header {
   position: sticky;
   top: 0;
   z-index: 2;
 }
 
-#container {
+#savedNewscontainer {
   background-color: black;
   display: block;
   text-align: center;
   justify-content: center;
   padding: 20px;
   border-radius: 20px;
-}
-
-#news-category {
-  margin: 30px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .loadbtn {
@@ -55,24 +50,6 @@ header {
   top: 10px;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-  color: black;
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
-.material-symbols-outlined:hover {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
-  color: red;
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
 .selected-fav-element {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   color: red;
@@ -80,4 +57,11 @@ header {
   position: absolute;
   right: 10px;
   bottom: 10px;
+}
+
+#noNews {
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 10%;
 }

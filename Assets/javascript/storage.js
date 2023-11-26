@@ -49,7 +49,7 @@ class Storage {
         let savedItems = Storage.getSavedNewsItems();
         let updated = savedItems.filter((ele) => ele.id != e.id);
         localStorage.setItem('savedNews', JSON.stringify(updated));
-    }
+    } 
     static removeFavorite(e){
         let savedItems = Storage.getSavedNewsItems();
         let updated = savedItems.filter((ele) => ele.id != e);

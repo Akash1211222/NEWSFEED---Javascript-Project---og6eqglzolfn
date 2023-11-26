@@ -25,5 +25,5 @@ async function loadNews() {
         })
     }
 }
-
+ 
 loadNews();
